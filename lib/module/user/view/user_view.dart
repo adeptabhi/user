@@ -65,7 +65,7 @@ class _UserViewState extends State<UserView> {
                                 return index == users.length
                                     ? Selector<UserProvider, bool>(
                                         builder: (context, isLoading, w) {
-                                          return !isLoading
+                                          return isLoading
                                               ? Center(
                                                   child:
                                                       CircularProgressIndicator(),
